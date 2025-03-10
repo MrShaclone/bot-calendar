@@ -1,0 +1,46 @@
+# Tutorial: Bot do Discord - Calendário de Aulas
+
+## Requisitos
+
+Antes de iniciar, instale os seguintes pacotes:
+
+```sh
+pip install -r requirements.txt
+```
+
+## Como Configurar o Bot
+
+### 1. Crie um bot no Discord:
+
+- Acesse o [Discord Developer Portal](https://discord.com/developers/applications)
+- Crie uma nova aplicação e gere um token de bot.
+- Ative as intenções "Privileged Gateway Intents" (MESSAGE CONTENT INTENT).
+
+### 2. Configure o Token do Bot:
+
+- No arquivo do código, substitua `'sua key aqui'` pelo token do bot.
+
+### 3. Execute o Bot:
+
+```sh
+python bot.py
+```
+
+### 4. Adicione o Bot ao Servidor:
+
+- Gere o link de convite no Developer Portal e conceda permissões necessárias.
+
+## Comandos Disponíveis
+
+- `!calendario` → Envia um embed com a descrição do calendário e um botão interativo.
+
+## Personalização
+
+- Substitua `image_url` pelo link de uma imagem desejada para o calendário.
+- Modifique o texto do comando `!calendario` para personalizar as mensagens.
+
+## Solução de Problemas
+
+- **Bot não responde?** Verifique se ele está com as permissões corretas no servidor.
+- **Erro de token?** Certifique-se de que o token está correto e ativo.
+
